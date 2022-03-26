@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/darkbg"
+    tools:context=".signin">
+
+
+    <TextView
+        android:id="@+id/newprojtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/adamina"
+        android:text="NEW PROJECT"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/fname"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/newprojtitle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edt"
+        android:fontFamily="@font/adamina"
+        android:hint="First Name"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/sname"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/fname"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edt"
+        android:fontFamily="@font/adamina"
+        android:hint="Last Name"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/titleproj"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sname"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edt"
+        android:fontFamily="@font/adamina"
+        android:hint="Title"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+
+    <EditText
+        android:id="@+id/year"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/titleproj"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edt"
+        android:fontFamily="@font/adamina"
+        android:hint="Year"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/image"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/year"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/adamina"
+        android:text="Upload Image"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="15dp"
+        app:iconTint="#24F9FF"
+        app:strokeColor="#24F9FF"
+        app:strokeWidth="2dp" />
+
+    <EditText
+        android:id="@+id/description"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="230dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/image"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edt"
+        android:fontFamily="@font/adamina"
+        android:hint="Description"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/createprojbtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/adamina"
+        android:text="Create Project"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="360dp"
+        app:iconTint="#24F9FF"
+        app:strokeColor="#24F9FF"
+        app:strokeWidth="1dp" />
+
+
+
+</RelativeLayout>

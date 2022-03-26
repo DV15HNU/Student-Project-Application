@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parents"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/black">
+
+
+        <TextView
+            android:id="@+id/txtname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black"
+            android:fontFamily="@font/adamina"
+            android:gravity="center_horizontal"
+            android:text="CMD Crawler"
+            android:textColor="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/txtname1"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/projimg" />
+
+        <TextView
+            android:id="@+id/txtemail1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView1"
+            android:background="@color/black"
+            android:text="Email Name"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/desc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtemail1"
+            android:background="@color/black"
+            android:text="*DESCRIPTION*"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc1">
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="#00982020"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_baseline_delete_outline_24" />
+
+            <Button
+                android:id="@+id/editbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="#00982020"
+                android:drawableRight="@drawable/ic_baseline_edit_24"
+                app:iconTint="#00853636" />
+         </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
